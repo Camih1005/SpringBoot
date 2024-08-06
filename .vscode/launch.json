@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-AppJ3Application<app-j3>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.appdemoj3.app_j3.AppJ3Application",
+            "projectName": "app-j3",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
