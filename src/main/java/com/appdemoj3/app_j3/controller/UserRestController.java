@@ -29,6 +29,8 @@ public UserDto details(){
 
 }
 
+
+
  @GetMapping("/list-details/{cedula}")
     public List<User> listArrayDetails(@PathVariable int cedula) {
      
@@ -36,6 +38,7 @@ public UserDto details(){
         user1.setCedula(1);
         user1.setNombre("Camilo");
         user1.setApellido("Hernandez");
+        user1.setEmail("camiloht0918@gmail.com");
 
         User user2 = new User();
         user2.setCedula(2);
@@ -57,6 +60,27 @@ public UserDto details(){
 
 
         return filteredUsers;
+    }
+
+    @GetMapping("/list-all")
+    public List<User> listAllUsers() {
+        User user1 = new User();
+        user1.setCedula(1005323441);
+        user1.setNombre("Camilo");
+        user1.setApellido("Hernandez");
+        user1.setEmail("camiloht0918@gmail.com");
+
+        User user2 = new User();
+        user2.setCedula(1025684952);
+        user2.setNombre("Carlos");
+        user2.setApellido("Aguilar");
+
+        User user3 = new User();
+        user3.setCedula(102659489);
+        user3.setNombre("Daniel");
+        user3.setApellido("Tobon");
+
+        return Arrays.asList(user1, user2, user3);
     }
 
 // public Map<String, Object> details() {
